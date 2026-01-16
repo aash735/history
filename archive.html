@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the complete archive of forgotten monuments">
+    <title>Archive - Whispers of Forgotten India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="archive-page">
+    <!-- Navigation -->
+    <nav class="main-nav scrolled" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">Whispers</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="stories.html" class="nav-link">Stories</a></li>
+                <li><a href="archive.html" class="nav-link active">Archive</a></li>
+                <li><a href="index.html#discover" class="nav-link">Discover</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Archive Header -->
+    <header class="archive-header">
+        <div class="container">
+            <div class="archive-header-content" data-aos="fade-up">
+                <span class="page-label">Digital Collection</span>
+                <h1 class="page-title">Heritage Archive</h1>
+                <p class="page-description">
+                    A comprehensive catalog of India's forgotten monuments, organized by era, region, and type
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Filter -->
+    <section class="archive-controls">
+        <div class="container">
+            <div class="controls-wrapper" data-aos="fade-up">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        placeholder="Search monuments, regions, eras..." 
+                        class="archive-search"
+                        id="archiveSearch"
+                    >
+                    <button class="search-btn" aria-label="Search">
+                        <span>🔍</span>
+                    </button>
+                </div>
+                
+                <div class="archive-filters">
+                    <select class="archive-select" id="eraFilter">
+                        <option value="all">All Eras</option>
+                        <option value="ancient">Ancient (Before 500 CE)</option>
+                        <option value="medieval">Medieval (500-1500 CE)</option>
+                        <option value="sultanate">Sultanate (1500-1800 CE)</option>
+                    </select>
+                    
+                    <select class="archive-select" id="regionFilter">
+                        <option value="all">All Regions</option>
+                        <option value="north">Northern India</option>
+                        <option value="south">Southern India</option>
+                        <option value="east">Eastern India</option>
+                        <option value="west">Western India</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Stats -->
+    <section class="archive-stats">
+        <div class="container">
+            <div class="stats-grid" data-aos="fade-up">
+                <div class="stat-item">
+                    <div class="stat-number">54</div>
+                    <div class="stat-label">Documented Monuments</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">States Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2000+</div>
+                    <div class="stat-label">Years of History</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Active Researchers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive List -->
+    <section class="archive-list">
+        <div class="container">
+            <div class="archive-table" data-aos="fade-up">
+                <div class="table-header">
+                    <div class="col-name">Monument Name</div>
+                    <div class="col-location">Location</div>
+                    <div class="col-era">Era</div>
+                    <div class="col-type">Type</div>
+                    <div class="col-action">Details</div>
+                </div>
+                
+                <div class="table-body" id="archiveTableBody">
+                    <!-- Row 1 -->
+                    <div class="table-row" data-era="medieval" data-region="south">
+                        <div class="col-name">
+                            <span class="monument-name">Temple of Vanished Prayers</span>
+                        </div>
+                        <div class="col-location">Karnataka, Western Ghats</div>
+                        <div class="col-era">
+                            <span class="era-badge">9th Century</span>
+                        </div>
+                        <div class="col-type">Temple</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=temple" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="table-row" data-era="medieval" data-region="west">
+                        <div class="col-name">
+                            <span class="monument-name">The Silent Cenotaphs</span>
+                        </div>
+                        <div class="col-location">Rajasthan, Thar Desert</div>
+                        <div class="col-era">
+                            <span class="era-badge">13th Century</span>
+                        </div>
+                        <div class="col-type">Memorial</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=cenotaphs" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 3 -->
+                    <div class="table-row" data-era="sultanate" data-region="west">
+                        <div class="col-name">
+                            <span class="monument-name">The Merchant's Gateway</span>
+                        </div>
+                        <div class="col-location">Gujarat, Coastal Plains</div>
+                        <div class="col-era">
+                            <span class="era-badge">16th Century</span>
+                        </div>
+                        <div class="col-type">Gateway</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=gateway" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 4 -->
+                    <div class="table-row" data-era="medieval" data-region="central">
+                        <div class="col-name">
+                            <span class="monument-name">Citadel of Lost Kings</span>
+                        </div>
+                        <div class="col-location">Madhya Pradesh, Vindhya Range</div>
+                        <div class="col-era">
+                            <span class="era-badge">15th Century</span>
+                        </div>
+                        <div class="col-type">Fort</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=citadel" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 5 -->
+                    <div class="table-row" data-era="sultanate" data-region="west">
+                        <div class="col-name">
+                            <span class="monument-name">Moonlight Chambers</span>
+                        </div>
+                        <div class="col-location">Rajasthan, Aravalli Hills</div>
+                        <div class="col-era">
+                            <span class="era-badge">17th Century</span>
+                        </div>
+                        <div class="col-type">Palace</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=moonlight" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 6 -->
+                    <div class="table-row" data-era="medieval" data-region="west">
+                        <div class="col-name">
+                            <span class="monument-name">Well of Whispered Names</span>
+                        </div>
+                        <div class="col-location">Gujarat, Patan Region</div>
+                        <div class="col-era">
+                            <span class="era-badge">12th Century</span>
+                        </div>
+                        <div class="col-type">Stepwell</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=stepwell" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 7 -->
+                    <div class="table-row" data-era="ancient" data-region="south">
+                        <div class="col-name">
+                            <span class="monument-name">Sanctuary of Stone Dancers</span>
+                        </div>
+                        <div class="col-location">Tamil Nadu, Nilgiri Hills</div>
+                        <div class="col-era">
+                            <span class="era-badge">8th Century</span>
+                        </div>
+                        <div class="col-type">Temple</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=dancers" class="action-link">View →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 8 -->
+                    <div class="table-row" data-era="medieval" data-region="west">
+                        <div class="col-name">
+                            <span class="monument-name">Fortress in the Mist</span>
+                        </div>
+                        <div class="col-location">Maharashtra, Western Ghats</div>
+                        <div class="col-era">
+                            <span class="era-badge">14th Century</span>
+                        </div>
+                        <div class="col-type">Fort</div>
+                        <div class="col-action">
+                            <a href="monument.html?id=mist-fort" class="action-link">View →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="archive-pagination" data-aos="fade-up">
+                <button class="page-btn disabled">← Previous</button>
+                <div class="page-numbers">
+                    <button class="page-num active">1</button>
+                    <button class="page-num">2</button>
+                    <button class="page-num">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-num">7</button>
+                </div>
+                <button class="page-btn">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Preview Section -->
+    <section class="map-preview-section">
+        <div class="container">
+            <div class="map-preview-content" data-aos="fade-up">
+                <div class="map-preview-text">
+                    <h2 class="section-title">Interactive Heritage Map</h2>
+                    <p class="section-description">
+                        Explore monuments geographically across India. Discover hidden gems 
+                        in your region or plan heritage trails.
+                    </p>
+                    <button class="btn btn-primary" id="viewMapBtn">
+                        View Full Map
+                    </button>
+                </div>
+                
+                <div class="map-preview-visual">
+                    <div class="map-placeholder">
+                        <div class="map-marker" style="top: 30%; left: 40%;"></div>
+                        <div class="map-marker" style="top: 50%; left: 25%;"></div>
+                        <div class="map-marker" style="top: 65%; left: 45%;"></div>
+                        <div class="map-marker" style="top: 40%; left: 70%;"></div>
+                        <div class="map-marker" style="top: 75%; left: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribute Section -->
+    <section class="contribute-section">
+        <div class="container">
+            <div class="contribute-content" data-aos="zoom-in">
+                <h2 class="contribute-title">Know a Forgotten Monument?</h2>
+                <p class="contribute-text">
+                    Help us preserve India's heritage by contributing stories, photographs, 
+                    or historical documentation of lesser-known monuments.
+                </p>
+                <button class="btn btn-outline">Submit a Monument</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-symbol">◈</span>
+                        <span class="logo-text">Whispers</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Preserving the untold stories of India's forgotten monuments
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="stories.html">All Stories</a></li>
+                        <li><a href="archive.html">Archive</a></li>
+                        <li><a href="index.html#discover">By Region</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">About Project</a></li>
+                        <li><a href="#">Contribute</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Whispers of Forgotten India. A heritage preservation initiative.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the hidden stories of India's unsung monuments">
+    <title>Whispers of Forgotten India - Hidden Stories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">Whispers</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="stories.html" class="nav-link">Stories</a></li>
+                <li><a href="archive.html" class="nav-link">Archive</a></li>
+                <li><a href="#discover" class="nav-link">Discover</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+            <div class="hero-glow"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <span>Untold Heritage</span>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                Whispers of<br>Forgotten India
+            </h1>
+            
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                Discover the hidden stories of India's unsung monuments
+            </p>
+            
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                <a href="#featured" class="btn btn-primary">Begin Journey</a>
+                <a href="stories.html" class="btn btn-ghost">View All Stories</a>
+            </div>
+        </div>
+        
+        <div class="scroll-hint" data-aos="fade" data-aos-delay="800">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Featured Monuments</span>
+                <h2 class="section-title">Echoes in Stone</h2>
+                <p class="section-description">
+                    Journey through time to discover monuments that history overlooked
+                </p>
+            </div>
+            
+            <div class="featured-grid">
+                <!-- Featured Card 1 -->
+                <article class="featured-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <div class="card-image-placeholder card-image-1"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-era">13th Century</span>
+                            <span class="card-location">Rajasthan</span>
+                        </div>
+                        <h3 class="card-title">The Silent Cenotaphs</h3>
+                        <p class="card-excerpt">
+                            Marble memorials stand abandoned in the Thar, each telling stories
+                            of queens who ruled when history looked away.
+                        </p>
+                        <a href="monument.html?id=cenotaphs" class="card-link">
+                            Discover the story
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Featured Card 2 -->
+                <article class="featured-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <div class="card-image-placeholder card-image-2"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-era">9th Century</span>
+                            <span class="card-location">Karnataka</span>
+                        </div>
+                        <h3 class="card-title">Temple of Vanished Prayers</h3>
+                        <p class="card-excerpt">
+                            Hidden in the Western Ghats, this shrine echoes with chants
+                            that haven't been heard in a thousand years.
+                        </p>
+                        <a href="monument.html?id=temple" class="card-link">
+                            Discover the story
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Featured Card 3 -->
+                <article class="featured-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <div class="card-image-placeholder card-image-3"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-era">16th Century</span>
+                            <span class="card-location">Gujarat</span>
+                        </div>
+                        <h3 class="card-title">The Merchant's Gateway</h3>
+                        <p class="card-excerpt">
+                            Once a bustling trade portal, now silence guards the carved
+                            archways where fortunes were made and lost.
+                        </p>
+                        <a href="monument.html?id=gateway" class="card-link">
+                            Discover the story
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover-section" id="discover">
+        <div class="container">
+            <div class="discover-content">
+                <div class="discover-text" data-aos="fade-right">
+                    <span class="section-label">Interactive Journey</span>
+                    <h2 class="section-title">Explore by Region</h2>
+                    <p class="discover-description">
+                        Navigate through India's forgotten corners. Each region holds monuments
+                        that time forgot, waiting to share their whispers.
+                    </p>
+                    <a href="stories.html" class="btn btn-outline">View Map</a>
+                </div>
+                
+                <div class="discover-visual" data-aos="fade-left">
+                    <div class="region-selector">
+                        <div class="region-item" data-region="north">
+                            <div class="region-icon">◆</div>
+                            <div class="region-info">
+                                <h4>Northern Highlands</h4>
+                                <span>12 monuments</span>
+                            </div>
+                        </div>
+                        <div class="region-item" data-region="south">
+                            <div class="region-icon">◇</div>
+                            <div class="region-info">
+                                <h4>Southern Temples</h4>
+                                <span>18 monuments</span>
+                            </div>
+                        </div>
+                        <div class="region-item" data-region="east">
+                            <div class="region-icon">◈</div>
+                            <div class="region-info">
+                                <h4>Eastern Plains</h4>
+                                <span>9 monuments</span>
+                            </div>
+                        </div>
+                        <div class="region-item" data-region="west">
+                            <div class="region-icon">◊</div>
+                            <div class="region-info">
+                                <h4>Western Deserts</h4>
+                                <span>15 monuments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header centered" data-aos="fade-up">
+                <span class="section-label">Through the Ages</span>
+                <h2 class="section-title">Journey Across Time</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-era">Ancient Era</span>
+                        <h3>2000 BCE - 500 CE</h3>
+                        <p>Rock-cut sanctuaries and forgotten stupas from India's earliest civilizations</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-era">Medieval Period</span>
+                        <h3>500 CE - 1500 CE</h3>
+                        <p>Temple complexes and fortifications lost to jungle and memory</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-era">Sultanate Age</span>
+                        <h3>1500 CE - 1800 CE</h3>
+                        <p>Architectural marvels from kingdoms that vanished overnight</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Join the Journey</h2>
+                <p class="cta-text">
+                    Become part of our community preserving India's forgotten heritage
+                </p>
+                <div class="cta-actions">
+                    <a href="archive.html" class="btn btn-primary">Explore Archive</a>
+                    <a href="#" class="btn btn-ghost">Contribute a Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-symbol">◈</span>
+                        <span class="logo-text">Whispers</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Preserving the untold stories of India's forgotten monuments
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="stories.html">All Stories</a></li>
+                        <li><a href="archive.html">Archive</a></li>
+                        <li><a href="#discover">By Region</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">About Project</a></li>
+                        <li><a href="#">Contribute</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Whispers of Forgotten India. A heritage preservation initiative.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="interactions.js"></script>
+</body>
+</html>

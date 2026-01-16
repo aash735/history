@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all forgotten monument stories">
+    <title>Stories - Whispers of Forgotten India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="stories-page">
+    <!-- Navigation -->
+    <nav class="main-nav scrolled" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">Whispers</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="stories.html" class="nav-link active">Stories</a></li>
+                <li><a href="archive.html" class="nav-link">Archive</a></li>
+                <li><a href="index.html#discover" class="nav-link">Discover</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <span class="page-label">Monument Collection</span>
+                <h1 class="page-title">Forgotten Chronicles</h1>
+                <p class="page-description">
+                    54 monuments across India, each with a story that time couldn't erase
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar" data-aos="fade-up">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="temple">Temples</button>
+                    <button class="filter-btn" data-filter="fort">Forts</button>
+                    <button class="filter-btn" data-filter="palace">Palaces</button>
+                    <button class="filter-btn" data-filter="stepwell">Stepwells</button>
+                </div>
+                
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                        <span class="grid-icon">⊞</span>
+                    </button>
+                    <button class="view-btn" data-view="list" aria-label="List view">
+                        <span class="list-icon">☰</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Grid -->
+    <section class="stories-grid-section">
+        <div class="container">
+            <div class="stories-grid" id="storiesGrid">
+                <!-- Story Card 1 -->
+                <article class="story-card" data-category="temple" data-aos="fade-up">
+                    <div class="story-card-image">
+                        <div class="story-image-placeholder story-bg-1"></div>
+                        <div class="story-card-overlay"></div>
+                        <span class="story-card-category">Temple</span>
+                    </div>
+                    <div class="story-card-body">
+                        <div class="story-card-meta">
+                            <span class="story-era">9th Century</span>
+                            <span class="story-location">Karnataka</span>
+                        </div>
+                        <h3 class="story-card-title">Temple of Vanished Prayers</h3>
+                        <p class="story-card-excerpt">
+                            Nestled in mist-covered hills, this shrine still resonates with forgotten rituals
+                        </p>
+                        <a href="monument.html?id=temple" class="story-card-link">
+                            Read more <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Story Card 2 -->
+                <article class="story-card" data-category="fort" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card-image">
+                        <div class="story-image-placeholder story-bg-2"></div>
+                        <div class="story-card-overlay"></div>
+                        <span class="story-card-category">Fort</span>
+                    </div>
+                    <div class="story-card-body">
+                        <div class="story-card-meta">
+                            <span class="story-era">15th Century</span>
+                            <span class="story-location">Madhya Pradesh</span>
+                        </div>
+                        <h3 class="story-card-title">Citadel of Lost Kings</h3>
+                        <p class="story-card-excerpt">
+                            Walls that witnessed the fall of empires, now silent guardians of memory
+                        </p>
+                        <a href="monument.html?id=citadel" class="story-card-link">
+                            Read more <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Story Card 3 -->
+                <article class="story-card" data-category="palace" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card-image">
+                        <div class="story-image-placeholder story-bg-3"></div>
+                        <div class="story-card-overlay"></div>
+                        <span class="story-card-category">Palace</span>
+                    </div>
+                    <div class="story-card-body">
+                        <div class="story-card-meta">
+                            <span class="story-era">17th Century</span>
+                            <span class="story-location">Rajasthan</span>
+                        </div>
+                        <h3 class="story-card-title">Moonlight Chambers</h3>
+                        <p class="story-card-excerpt">
+                            Royal halls designed to capture lunar glow, abandoned to starlight
+                        </p>
+                        <a href="monument.html?id=moonlight" class="story-card-link">
+                            Read more <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Story Card 4 -->
+                <article class="story-card" data-category="stepwell" data-aos="fade-up">
+                    <div class="story-card-image">
+                        <div class="story-image-placeholder story-bg-4"></div>
+                        <div class="story-card-overlay"></div>
+                        <span class="story-card-category">Stepwell</span>
+                    </div>
+                    <div class="story-card-body">
+                        <div class="story-card-meta">
+                            <span class="story-era">12th Century</span>
+                            <span class="story-location">Gujarat</span>
+                        </div>
+                        <h3 class="story-card-title">Well of Whispered Names</h3>
+                        <p class="story-card-excerpt">
+                            Seven stories descend into darkness, each carved with forgotten prayers
+                        </p>
+                        <a href="monument.html?id=stepwell" class="story-card-link">
+                            Read more <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Story Card 5 -->
+                <article class="story-card" data-category="temple" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card-image">
+                        <div class="story-image-placeholder story-bg-5"></div>
+                        <div class="story-card-overlay"></div>
+                        <span class="story-card-category">Temple</span>
+                    </div>
+                    <div class="story-card-body">
+                        <div class="story-card-meta">
+                            <span class="story-era">8th Century</span>
+                            <span class="story-location">Tamil Nadu</span>
+                        </div>
+                        <h3 class="story-card-title">Sanctuary of Stone Dancers</h3>
+                        <p class="story-card-excerpt">
+                            Frozen in time, celestial sculptures perform for an audience of silence
+                        </p>
+                        <a href="monument.html?id=dancers" class="story-card-link">
+                            Read more <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Story Card 6 -->
+                <article class="story-card" data-category="fort" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card-image">
+                        <div class="story-image-placeholder story-bg-6"></div>
+                        <div class="story-card-overlay"></div>
+                        <span class="story-card-category">Fort</span>
+                    </div>
+                    <div class="story-card-body">
+                        <div class="story-card-meta">
+                            <span class="story-era">14th Century</span>
+                            <span class="story-location">Maharashtra</span>
+                        </div>
+                        <h3 class="story-card-title">Fortress in the Mist</h3>
+                        <p class="story-card-excerpt">
+                            Cloud-piercing ramparts where legends were born and empires ended
+                        </p>
+                        <a href="monument.html?id=mist-fort" class="story-card-link">
+                            Read more <span>→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-section" data-aos="fade-up">
+                <button class="btn btn-outline" id="loadMore">
+                    Load More Stories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="zoom-in">
+                <h2 class="newsletter-title">Never Miss a Discovery</h2>
+                <p class="newsletter-text">
+                    Get monthly stories delivered to your inbox
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        required 
+                        class="newsletter-input"
+                    >
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-symbol">◈</span>
+                        <span class="logo-text">Whispers</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Preserving the untold stories of India's forgotten monuments
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="stories.html">All Stories</a></li>
+                        <li><a href="archive.html">Archive</a></li>
+                        <li><a href="index.html#discover">By Region</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">About Project</a></li>
+                        <li><a href="#">Contribute</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Whispers of Forgotten India. A heritage preservation initiative.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="interactions.js"></script>
+</body>
+</html>
