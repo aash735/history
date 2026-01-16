@@ -833,3 +833,56 @@ a {
     color: var(--color-text-muted);
     font-size: 0.875rem;
 }
+/* Ensure content sits above the canvas */
+.hero-section, 
+.monument-hero, 
+.featured-section,
+.archive-list,
+.footer {
+    position: relative;
+    z-index: 2; /* Ensures content is above the 3D canvas */
+}
+
+/* Specific fix for hero backgrounds to allow transparency */
+.hero-background, 
+.monument-hero-bg {
+    /* Slightly reduce opacity of existing static backgrounds 
+       to let the 3D particles shine through */
+    opacity: 0.8; 
+    z-index: 0;
+}
+/* =====================================================
+   VIDEO BACKGROUND TRANSPARENCY OVERRIDES
+   Add this to the bottom of style.css
+   ===================================================== */
+
+/* 1. Make the main body and html transparent */
+html, body {
+    background-color: transparent !important;
+}
+
+/* 2. Make sections semi-transparent so text is readable but video shows */
+.featured-section,
+.discover-section,
+.timeline-section,
+.cta-section,
+.monument-story,
+.archive-list,
+.archive-stats,
+.main-footer {
+    background: rgba(13, 13, 13, 0.85) !important; /* 85% opacity black */
+    backdrop-filter: blur(5px); /* Optional: Adds a glass effect */
+}
+
+/* 3. Adjust specific gradients to be see-through */
+.hero-section {
+    background: transparent !important;
+}
+.hero-background {
+    opacity: 0.4 !important; /* Dim the static background pattern */
+}
+
+/* 4. Ensure the video container stays behind everything */
+.video-bg-container {
+    z-index: -9999 !important;
+}
